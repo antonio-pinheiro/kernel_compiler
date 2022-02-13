@@ -25,8 +25,6 @@ Aplicar permissão de execução ao script: chmod +x kernel_compiler.sh ou compi
 Executar o script: ./kernel_compiler.sh ou compilar_kernel_pt_BR.sh<br></br>
 Selecionar a versão do kernel da qual se deseja compilar.
 
-ou executar o arquivo em português:
-
 
 
 <h5>IMAGENS DO PROJETO</h5>
