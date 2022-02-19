@@ -27,7 +27,7 @@ compilar_dependencias(){
         echo "Instalando dependências..."
         sudo apt update && sudo apt upgrade && sudo apt install libelf-dev build-essential \
         linux-source bc kmod cpio flex libncurses5-dev \
-        libelf-dev libssl-dev dwarves
+        libelf-dev libssl-dev dwarves lsb-release
         echo "Todas as dependências foram instaladas com sucesso"
         echo "Agora você pode executar a opção 2 e compilar seu novo Kernel..."
         funcao_principal

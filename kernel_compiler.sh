@@ -52,7 +52,7 @@ compile_dependencies(){
         echo "Installing dependencies..."
         sudo apt update && sudo apt upgrade && sudo apt install libelf-dev build-essential \
         linux-source bc kmod cpio flex libncurses5-dev \
-        libelf-dev libssl-dev dwarves
+        libelf-dev libssl-dev dwarves lsb-release
         echo "All dependencies have been installed."
         echo "Now you can execute option 2 to compile the kernel..."
         start_function
