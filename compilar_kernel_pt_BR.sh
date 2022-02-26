@@ -22,20 +22,14 @@ adicionar_sudoers(){
 
 compilar_dependencias(){
 
-    if [[ $distro == "Debian" ]]; then
         echo "As dependencias aqui instaladas permitem que você compile seu Kernel"
         echo "Instalando dependências..."
         sudo apt update && sudo apt upgrade && sudo apt install libelf-dev build-essential \
         linux-source bc kmod cpio flex libncurses5-dev \
-        libelf-dev libssl-dev dwarves lsb-release
+        libelf-dev libssl-dev dwarves lsb-release wget
         echo "Todas as dependências foram instaladas com sucesso"
         echo "Agora você pode executar a opção 2 e compilar seu novo Kernel..."
         funcao_principal
-    else
-        echo "Esse script funciona apenas com sistemas Debian"
-        echo "Fechando..."
-        exit 
-    fi
 }
 
 compilar_kernel(){

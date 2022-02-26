@@ -46,21 +46,15 @@ add_user_sudoers(){
 }
 
 compile_dependencies(){
-
-    if [[ $distro == "Debian" ]]; then
+    
         echo "The dependencies in this script allow you to compile the kernel"
         echo "Installing dependencies..."
         sudo apt update && sudo apt upgrade && sudo apt install libelf-dev build-essential \
         linux-source bc kmod cpio flex libncurses5-dev \
-        libelf-dev libssl-dev dwarves lsb-release
+        libelf-dev libssl-dev dwarves lsb-release wget
         echo "All dependencies have been installed."
         echo "Now you can execute option 2 to compile the kernel..."
         start_function
-    else
-        echo "This script only works with Debian System"
-        echo "Close..."
-        exit 
-    fi
 }
 
 compile_kernel(){
