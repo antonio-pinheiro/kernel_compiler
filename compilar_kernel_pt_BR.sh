@@ -55,6 +55,8 @@ compilar_kernel(){
             cd /boot
             sudo mkinitramfs -o initrd.img-$kernel_versao $kernel_versao
             sudo update-grub
+            cd /usr/src/linux-$kernel_versao
+            sudo make clean
             echo
             echo "************************************************************************************"
             echo "************************************************************************************"

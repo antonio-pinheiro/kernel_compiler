@@ -68,7 +68,7 @@ compile_kernel(){
         read kernel_version
 
         if [[ $kernel_version !=  $kernel_installed ]]; then
-            #Download chosen version of Kernel Linux and compile it.
+            #Download the chosen version of Kernel Linux and compile it.
             sudo wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-$kernel_version.tar.xz
             sudo tar -xvf linux-$kernel_version.tar.xz -C /usr/src
             cd /usr/src/linux-$kernel_version/
@@ -81,6 +81,8 @@ compile_kernel(){
             cd /boot
             sudo mkinitramfs -o initrd.img-$kernel_version $kernel_version
             sudo update-grub
+            cd /usr/src/linux-$kernel_versao
+            sudo make clean
             echo
             echo "************************************************************************************"
             echo "************************************************************************************"
