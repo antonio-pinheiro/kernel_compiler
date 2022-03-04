@@ -23,8 +23,8 @@ Execute o script: ./kernel_compiler.sh
 
 ## Imagens do projeto
 
-![imagem1.png](https://raw.githubusercontent.com/antonio-pinheiro/docker_creator/main/.github/images/imagem1.png)
-![imagem2.png](https://raw.githubusercontent.com/antonio-pinheiro/docker_creator/main/.github/images/imagem2.png)
-![imagem3.png](https://raw.githubusercontent.com/antonio-pinheiro/docker_creator/main/.github/images/imagem3.png)
-![imagem4.png](https://raw.githubusercontent.com/antonio-pinheiro/docker_creator/main/.github/images/imagem4.png)
-![imagem5.png](https://raw.githubusercontent.com/antonio-pinheiro/docker_creator/main/.github/images/imagem5.png)
+![imagem1.png](https://raw.githubusercontent.com/antonio-pinheiro/kernel_compiler/main/.github/images/imagem1.png)
+![imagem2.png](https://raw.githubusercontent.com/antonio-pinheiro/kernel_compiler/main/.github/images/imagem2.png)
+![imagem3.png](https://raw.githubusercontent.com/antonio-pinheiro/kernel_compiler/main/.github/images/imagem3.png)
+![imagem4.png](https://raw.githubusercontent.com/antonio-pinheiro/kernel_compiler/main/.github/images/imagem4.png)
+![imagem5.png](https://raw.githubusercontent.com/antonio-pinheiro/kernel_compiler/main/.github/images/imagem5.png)
