@@ -29,7 +29,6 @@
 
 distro=$(lsb_release -i | cut -f 2-)
 kernel_installed=$(uname -r)
-cpu_threads=$(nproc)
 
 add_user_sudoers(){
     
@@ -74,8 +73,8 @@ compile_kernel(){
             cd /usr/src/linux-$kernel_version/
             sudo make menuconfig
             sudo sed -ri '/CONFIG_SYSTEM_TRUSTED_KEYS/s/=.+/=""/g' .config
-            sudo make -j $cpu_threads
-            sudo make -j $cpu_threads modules
+            sudo make -j $(nproc)
+            sudo make -j $(nproc) modules
             sudo make INSTALL_MOD_STRIP=1 modules_install
             sudo make install
             cd /boot
